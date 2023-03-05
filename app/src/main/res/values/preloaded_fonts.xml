@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abeezee</item>
+        <item>@font/amiko</item>
+        <item>@font/newfont</item>
+        <item>@font/aguafina_script</item>
+        <item>@font/akaya_telivigala</item>
+        <item>@font/aldrich</item>
+        <item>@font/aleo</item>
+        <item>@font/almendra_bold</item>
+        <item>@font/calligraffitti</item>
+        <item>@font/cherry_cream_soda</item>
+    </array>
+</resources>

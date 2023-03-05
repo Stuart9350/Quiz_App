@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/bg"
+    tools:context=".QuizMain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="35dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp">
+
+                <TextView
+                    android:id="@+id/counter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Count 1/5"
+                    android:textSize="20sp"/>
+
+<!--                <ProgressBar-->
+<!--                    android:id="@+id/progressBar"-->
+<!--                    style="?android:attr/progressBarStyleHorizontal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/progress_img"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/progress1_"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+<!--QUESTION SECTION -->
+        <LinearLayout
+            android:id="@+id/tochange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/questionSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Q.1 This is the flag of which country ?"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:src="@drawable/indianflag"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@integer/material_motion_duration_short_1"
+                    tools:ignore="InvalidId">
+                    <RadioButton
+                        android:id="@+id/radioBtn_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="India"
+                        android:background="@drawable/blue_btn"
+                        android:paddingHorizontal="5dp"
+                        android:paddingVertical="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                    <RadioButton
+                        android:id="@+id/radioBtn_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="America"
+                        android:background="@drawable/btn_2"
+                        android:paddingHorizontal="5dp"
+                        android:paddingVertical="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                    <RadioButton
+                        android:id="@+id/radioBtn_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Afghanistan"
+                        android:background="@drawable/btn_3"
+                        android:paddingHorizontal="5dp"
+                        android:paddingVertical="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                    <RadioButton
+                        android:id="@+id/radioBtn_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="China"
+                        android:background="@drawable/btn_4"
+                        android:paddingHorizontal="5dp"
+                        android:paddingVertical="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/whiteof"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="15dp"
+            android:background="@drawable/next_button"/>
+
+    </LinearLayout>
+</RelativeLayout>
